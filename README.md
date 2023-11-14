@@ -1,3 +1,6 @@
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -20,17 +23,20 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Commits
 
-To learn more about Next.js, take a look at the following resources:
+To make commit messages as clear as possible we use [commitizen](https://github.com/commitizen/cz-cli) to ensure [conventional commits](https://www.conventionalcommits.org/) practice is followed
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### After adding files to commit using `git add`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Instead of using
 
-## Deploy on Vercel
+`git commit -m "commit message"`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Use
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+`
+git commit
+`
+
+Which will run `cz`
